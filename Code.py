@@ -1,3 +1,7 @@
+library (circlize)
+library(grid)
+library(ComplexHeatmap)
+
 dataURL <- "https://raw.githubusercontent.com/Aria-Dolatabadian/Circular-heatmap-with-R-circlize/main/data.txt"
 expData.df<- read.table(dataURL,header=TRUE,sep="\t",stringsAsFactors=FALSE)
 expData.mat <- as.matrix(expData.df[-c(1)])
